@@ -1,4 +1,3 @@
-// App.jsx
 import React from "react";
 import { Routes, Route, Link, useParams, useNavigate } from "react-router-dom";
 import { posts } from "./assets/posts";

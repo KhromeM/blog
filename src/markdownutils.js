@@ -1,8 +1,8 @@
 const createSlug = (title) => {
 	return title
 		.toLowerCase()
-		.replace(/[^a-z0-9]+/g, "-") // Replace non-alphanumeric chars with hyphens
-		.replace(/^-+|-+$/g, "") // Remove leading/trailing hyphens
+		.replace(/[^a-z0-9]+/g, "-")
+		.replace(/^-+|-+$/g, "")
 		.trim();
 };
 
@@ -45,7 +45,6 @@ export const createPostFromMarkdown = (markdownText, id) => {
 		}
 	});
 
-	// Create the post object with a slug
 	const post = {
 		id: id,
 		title: frontmatter.title || "Untitled Post",
@@ -56,7 +55,6 @@ export const createPostFromMarkdown = (markdownText, id) => {
 		content: blocks,
 	};
 
-	// Add the slug based on the title
 	post.slug = createSlug(post.title);
 
 	return post;
