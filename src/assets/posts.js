@@ -155,3 +155,73 @@ export const posts = [
 ].map((article, index) => {
 	return createPostFromMarkdown(article, index);
 });
+
+const futureOfSWE = `---
+title: The Future of Software Engineering
+date:
+abstract:
+headerImage:
+imageCaption:
+---
+
+*Soon`;
+
+const whyArentYouWinning = `---
+title: If You're So Smart, Why Aren't You Winning?
+date:
+abstract:
+headerImage:
+imageCaption:
+---
+
+*Soon`;
+
+const whatIsSlop = `---
+title: What is Slop?
+date:
+abstract: optimal entropic denisty, how much meaning can you fit into something vs how easy is it to summarize?
+headerImage:
+imageCaption:
+---
+
+*Soon`;
+
+const battleBond = `---
+title: How To Multiply You Chance of Success.
+date:
+abstract: optimal entropic denisty, how much meaning can you fit into something vs how easy is it to summarize?
+headerImage:
+imageCaption:
+---
+
+*Soon`;
+
+const howIAmLearningToDraw = `---
+title: How I Am Learning To Draw.
+date:
+abstract: 
+headerImage:
+imageCaption:
+---
+
+*Soon`;
+
+const focusOnOneThing = `---
+title: 
+date:
+abstract: To take anything to the next level of success you need to pour your soul into it. Making 100 apps is stupid, espically today. 
+headerImage:
+imageCaption:
+---
+
+*Soon`;
+
+const aDayWithoutMouse = `---
+title: A Day Without a Mouse
+date:
+abstract:
+headerImage:
+imageCaption:
+---
+
+*Soon`;
