@@ -4,7 +4,7 @@ const sweInternshipGuide = `---
 title: The Comprehensive Guide to Landing SWE Internships
 date: 2024-12-04
 abstract: A detailed guide for domestic US students on how to land software engineering internships, from application strategies to interview preparation, based on real experience landing 7 FAANG/quant tier offers.
-headerImage: https://khrome.s3.us-east-1.amazonaws.com/images/metablue.png
+headerImage:/assets/blueImages/metablue.png
 imageCaption: I fumbled my chance to take a picture here
 ---
 
@@ -128,4 +128,30 @@ If you want a course for DSA I recommend leetcode's own DSA course which is 90 b
 
 *I'm sure I still left out a ton of information that I'll add in when I think of it.*`;
 
-export const posts = [createPostFromMarkdown(sweInternshipGuide, 1)];
+const godEmperorArticle = `---
+title: Bow Before Your God Emperor
+date: 2024-12-18
+abstract:
+headerImage:/assets/blueImages/emperor.png
+imageCaption:
+---
+
+*Finishing later this week*`;
+
+const constraintedCompute = `---
+title: Constrained Compute
+date:
+abstract:
+headerImage:/assets/blueImages/basilisk.png
+imageCaption:
+---
+
+*Soon`;
+
+export const posts = [
+	constraintedCompute,
+	godEmperorArticle,
+	sweInternshipGuide,
+].map((article, index) => {
+	return createPostFromMarkdown(article, index);
+});
