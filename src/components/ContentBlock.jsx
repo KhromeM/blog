@@ -45,7 +45,7 @@ export const ContentBlock = ({ block }) => {
 		),
 		em: ({ children }) => <em className="blog-content-em">{children}</em>,
 		code: ({ children }) => (
-			<code className="blog-content-code px-1.5 py-0.5 rounded font-mono text-sm">
+			<code className="blog-content-code px-1.5 py-0.5 rounded text-sm">
 				{children}
 			</code>
 		),

@@ -11,11 +11,11 @@ export const PostPreview = ({ post }) => {
 				<div className="flex items-start gap-6">
 					<div className="flex-1 min-w-0">
 						<div className="space-y-1">
-							<h2 className="text-base md:text-xl font-mono post-title transition-colors">
+							<h2 className="text-base md:text-xl post-title transition-colors">
 								{post.title}
 							</h2>
 
-							<time className="text-sm post-meta font-mono block">
+							<time className="text-sm post-meta  block">
 								{post.date.toLocaleDateString("en-US", {
 									year: "numeric",
 									month: "long",

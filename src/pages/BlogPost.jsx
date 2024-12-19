@@ -26,7 +26,7 @@ export const BlogPost = () => {
 					{post.title}
 				</h1>
 
-				<time className="text-sm content-meta font-mono block mb-8">
+				<time className="text-sm content-meta block mb-8">
 					{post.date.toLocaleDateString("en-US", {
 						year: "numeric",
 						month: "long",
@@ -52,7 +52,7 @@ export const BlogPost = () => {
 
 				{post.abstract && (
 					<div className="my-8 p-6 blog-abstract mx-auto">
-						<h2 className="content-title text-sm font-mono mb-2">Abstract</h2>
+						<h2 className="content-title text-sm  mb-2">Abstract</h2>
 						<p className="content-body">{post.abstract}</p>
 					</div>
 				)}
